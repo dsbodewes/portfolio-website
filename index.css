@@ -16,7 +16,7 @@
 
 body {
     min-height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     overflow-y: scroll; /* Enable vertical scrolling */
     /* background-color: var(--color-bg);
     color: var(--color-text); */
@@ -125,7 +125,7 @@ header {
     padding-top: 100px;
 }
 
-#projects h2 {
+#projects h2{
     font-family: Univers Condensed;
     font-size: 32px;
     color: white;
@@ -167,13 +167,6 @@ header {
     width: 100%;
     height: auto;
 }
-
-#contact {
-    padding: 100px;
-    margin-top: 100px;
-    padding-top: 100px;
-}
-
 
 
 
