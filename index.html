@@ -13,19 +13,23 @@
     <body>
         <header>
             <a href="#" class="logo">db</a> 
-            <nav class="navbar">
-                <a href="#">HOME</a> 
-                <a href="#">PROJECTS</a>
-                <a href="#">CONTACT</a>
+            <div id="hamburger-menu" onclick="toggleMenu()">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <nav id="navbar" class="navbar">
+              <a href="#">HOME</a> 
+              <a href="#">PROJECTS</a>
+              <a href="#">CONTACT</a>
             </nav>
-        </header>
+          </header>
 
         <section id="home">
             <div class="container">
                 <div class="info">
-                    <h1>IN HET KORT</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-                       Pellentesque metus dui, sagittis et orci ut, <br> tincidunt porttitor libero.</p>
+                    <h1><span>IN HET KORT</span></h1>
+                    <p><span>Hoi, ik ben Diëgo, een 20-jarige student <br> Software Developer aan het Alfa-College in Groningen. <br> In de loop van mijn studie heb ik veel ervaring opgedaan met Unity <br> en ben ik vooral bedreven met de programmeertalen C# en C++.</span></p>
                 </div>
                 <!-- <div class="image01">
                     <img src="images/texture_01.png" class="rounded float-right" alt="#">
@@ -37,20 +41,20 @@
             <h2>MY PROJECTS</h2>
             <div class="project_grid">
                 <div class="project">
-                    <img src="images/no_texture01.jpg" alt="Project1">
-                    <h3>Lorem Ipsum</h3>
+                    <img src="images/peek_logo.jpg" alt="Project1">
+                    <h3>PEEK</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
 
                 <div class="project">
-                    <img src="images/no_texture01.jpg" alt="Project1">
-                    <h3>Lorem Ipsum</h3>
+                    <img src="images/tweakin.png" alt="Project1">
+                    <h3>TWEAKIN'</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
 
                 <div class="project">
-                    <img src="images/no_texture01.jpg" alt="Project1">
-                    <h3>Lorem Ipsum</h3>
+                    <img src="images/rt2d.png" alt="Project1">
+                    <h3>RT2D/FRAMEWORK</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
 
@@ -64,15 +68,15 @@
         </section>
         
         <section id="contact">
-            <h2>Contact</h2>
+            <h2>CONTACT</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </section>
 
         <footer>
             <!-- <button onclick="toggleTheme()">Toggle theme</button> -->
         </footer>
-
         
+
         <script src="index.js" async defer></script>
     </body>
 </html>
