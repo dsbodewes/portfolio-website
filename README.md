@@ -1,2 +1,4 @@
 # Portfolio
-My portfolio website.
+My personal portfolio website.
+
+(Not finished yet)
