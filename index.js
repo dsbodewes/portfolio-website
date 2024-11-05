@@ -35,3 +35,26 @@ function toggleTheme() {
   }
 }
 
+// Slider
+let currentSlide = 0;
+
+function showSlide(index) {
+  const slides = document.querySelectorAll(".slide");
+  
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (i === index) {
+      slide.classList.add("active");
+    }
+  });
+}
+
+function changeSlide(step) {
+  const slides = document.querySelectorAll(".slide");
+  currentSlide = (currentSlide + step + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+// Initialize the slider
+showSlide(currentSlide);
+
