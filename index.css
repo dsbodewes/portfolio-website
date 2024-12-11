@@ -308,6 +308,28 @@ button.next {
     text-align: center;
 }
 
+.fa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
+
+.fa {
+    
+    font-size: 2vw;
+    width: 5vw;
+    text-decoration: none;
+    color: #ffffff;
+}
+  
+  .fa:hover {
+    color: #b8b8b8de;
+    font-size-adjust: 10px;
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+}
+
 /* Media queries --------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
 
