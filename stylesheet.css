@@ -8,27 +8,14 @@ html {
     scroll-behavior: smooth;
 }
 
-/* :root {
-    --color-bg: #333;
-    --color-text: #fff;
-  }
-  
-  [data-theme="light"] {
-    --color-bg: #fff;
-    --color-text: #333;
-  } */
-
 body {
-    min-height: 100vh;
+    min-height: 100rem;
     background-color: black;
     overflow-y: scroll;
-    /* Enable vertical scrolling */
-    /* background-color: var(--color-bg);
-    color: var(--color-text); */
 }
 
 body::-webkit-scrollbar {
-    width: 5px;
+    width: 0.2rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -39,13 +26,12 @@ body::-webkit-scrollbar-thumb {
     background-color: darkgrey;
 }
 
-
 header {
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 1rem 2rem;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -61,7 +47,7 @@ header {
 }
 
 header.shrunk {
-    padding: 10px 50px;
+    padding: 0.7rem 1.2rem;
 }
 
 @font-face {
@@ -76,7 +62,7 @@ header.shrunk {
 
 .logo {
     font-family: ALHAMBRA;
-    font-size: 32px;
+    font-size: 2.125rem;
     color: white;
     text-decoration: none;
     font-weight: 700;
@@ -84,7 +70,7 @@ header.shrunk {
 
 .logoText {
     font-family: Univers Condensed;
-    font-size: 32px;
+    font-size: 2rem;
     color: white;
     text-decoration: none;
     font-weight: 700;
@@ -93,11 +79,11 @@ header.shrunk {
 .navbar a {
     font-family: Univers Condensed;
     position: relative;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: white;
     font-weight: 500;
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 2.5rem;
 }
 
 .navbar a::before {
@@ -106,7 +92,7 @@ header.shrunk {
     top: 100%;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 0.125rem;
     background: white;
     transition: .3s;
 }
@@ -116,22 +102,25 @@ header.shrunk {
 }
 
 #home {
-    padding-bottom: 100px;
-    height: 100vh;
+    padding-bottom: 13.25rem;
+    height: 38rem;
     background-image: url(images/texture_01.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
 }
 
 .info {
     color: white;
     position: absolute;
     text-align: left;
-    font-size: 18px;
-    margin-top: 250px;
-    left: 100px;
+    font-size: 1.125rem;
+    margin-top: 3.125rem;
+    left: 6.25rem;
     background-color: rgba(0, 0, 0, 0.5);
     /* 50% transparent black */
 }
@@ -144,72 +133,23 @@ header.shrunk {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* #projects {
-    padding: 100px;
-    margin-top: 100px;
-    padding-top: 100px;
-}
-
-#projects h2 {
-    font-family: Univers Condensed;
-    font-size: 32px;
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-}
-
-.project_grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.project {
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-.project h3 {
-    font-family: Univers Condensed;
-    font-size: 24px;
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-}
-
-.project p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-}
-
-.project img {
-    width: 100%;
-    height: auto;
-} */
-
 #projects {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 10rem;
     margin: 0;
+    padding: 6.25rem 0; /* Add padding to create space between sections */
     background-color: #000000;
 }
 
 .slider {
     position: relative;
-    width: 1200px;
-    /* Adjust as needed */
-    height: 400px;
+    width: 75rem;
+    height: 25rem;
     overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
 }
 
 .slide {
@@ -227,7 +167,6 @@ header.shrunk {
 
 .image-container {
     width: 60%;
-    /* Adjust to allocate space for image */
     height: 100%;
 }
 
@@ -235,7 +174,7 @@ header.shrunk {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px 0 0 8px;
+    border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .description {
@@ -244,17 +183,17 @@ header.shrunk {
     width: 40%;
     /* Adjust to allocate space for description */
     height: 100%;
-    padding: 20px;
+    padding: 1.25rem;
     box-sizing: border-box;
     background-color: rgb(0, 0, 0);
-    border-radius: 8px 0 0 8px;
+    border-radius: 0.5rem 0 0 0.5rem;
     overflow-y: auto;
 }
 
 .description h2 {
     margin: 0;
     font-family: Univers Condensed;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: #ffffff;
 }
 
@@ -271,23 +210,101 @@ button.next {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 0.625rem;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 button.prev {
-    left: 10px;
+    left: 0.625rem;
 }
 
 button.next {
-    right: 10px;
+    right: 0.625rem;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+}
+
+.content-container h1 {
+    font-family: Univers Condensed;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Slider */
+.slider {
+    margin-bottom: 2rem; /* Adjust spacing below the slider */
+    width: 100%;
+}
+
+/* Grid Styling */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.25rem;
+    padding: 1.25rem;
+    margin-top: 2rem; /* Adjust spacing above the grid */
+}
+
+.grid-item {
+    background: #f5f5f5;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 0.938rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grid-item img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 0.625rem;
+}
+
+.grid-item h3 {
+    font-size: 1.125rem;
+    color: #333;
+    margin: 0.625rem 0;
+}
+
+.grid-item p {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 0.625rem;
+}
+
+.grid-item a {
+    display: inline-block;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    border: 0.063rem solid #007BFF;
+    padding: 0.313rem 0.625rem;
+    border-radius: 0.313rem;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.grid-item a:hover {
+    background: #007BFF;
+    color: #fff;
+}
+
+.grid-item:hover {
+    transform: translateY(-0.313rem);
+    box-shadow: 0 0.5rem 0.938rem rgba(0, 0, 0, 0.2);
 }
 
 #contact {
-    padding: 100px;
-    margin-top: 100px;
-    padding-top: 100px;
+    padding: 6.25rem;
+    margin-top: 6.25rem;
+    padding-top: 6.25rem;
 }
 
 #contact h2 {
@@ -301,7 +318,7 @@ button.next {
 
 #contact p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: white;
     text-decoration: none;
     font-weight: 700;
@@ -312,73 +329,21 @@ button.next {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust as needed */
+    height: 1rem; /* Adjust as needed */
 }
 
 .fa {
-    
-    font-size: 2vw;
-    width: 5vw;
+    font-size: 1rem;
+    width: 2rem;
     text-decoration: none;
     color: #ffffff;
 }
   
   .fa:hover {
     color: #b8b8b8de;
-    font-size-adjust: 10px;
+    font-size-adjust: 0.625rem;
     opacity: 1;
     transition: 0.4s ease-in-out;
 }
 
 /* Media queries --------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
-
-    /* Styles for screens smaller than 768px */
-    header {
-        padding: 10px 50px;
-    }
-
-    header.shrunk {
-        padding: 5px 25px;
-    }
-
-    .logo {
-        font-size: 24px;
-    }
-
-    .navbar a {
-        font-size: 14px;
-        margin-left: 20px;
-    }
-
-    .container {
-        margin-top: 50px;
-        left: 50px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    /* Styles for screens smaller than 480px */
-    header {
-        padding: 10px 20px;
-    }
-
-    header.shrunk {
-        padding: 5px 10px;
-    }
-
-    .logo {
-        font-size: 20px;
-    }
-
-    .navbar a {
-        font-size: 12px;
-        margin-left: 10px;
-    }
-
-    .container {
-        margin-top: 20px;
-        left: 20px;
-    }
-}

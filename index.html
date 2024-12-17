@@ -33,60 +33,99 @@
             <div class="info">
                 <h1><span>IN HET KORT</span></h1>
                 <p><span>Hoi, ik ben Di&#235;go en ik studeer Software Development aan het
-                    <br> Alfa-College in Groningen. Ik ben altijd op zoek naar <br> nieuwe uitdagingen en mogelijkheden om mijn vaardigheden te verbeteren.
-                    <br> Neem gerust contact met mij op als je meer wilt weten of wilt samenwerken aan een project!</span></p>
+                        <br> Alfa-College in Groningen. Ik ben altijd op zoek naar <br> nieuwe uitdagingen en
+                        mogelijkheden om mijn vaardigheden te verbeteren.
+                        <br> Neem gerust contact met mij op als je meer wilt weten of wilt samenwerken aan een
+                        project!</span></p>
             </div>
-            <!-- <div class="image01">
-                    <img src="images/texture_01.png" class="rounded float-right" alt="#">
-                </div> -->
         </div>
     </section>
 
     <section id="projects">
-        <div class="slider">
-            <div class="slide active">
-                <div class="image-container">
-                    <img src="images/pendulum.gif" alt="Project 1">
+        <div class="content-container">
+            <h1>PROJECTS</h1>
+            <div class="slider">
+                <div class="slide active">
+                    <div class="image-container">
+                        <img src="images/double_pendulum.gif" alt="Project 1">
+                    </div>
+                    <div class="description">
+                        <h2>Math Physualizer</h2>
+                        <br>
+                        <p>Dit project bestaat uit meerdere kleine projecten waarin veel wiskunde voor komt, dit doe ik in
+                            Raylib C++.
+                            <br><br> Hier ben ik aan begonnen omdat ik mijn kennis in wiskunde wilde verbreden, dit helpt
+                            mij om wiskunde beter te kunnen visualizeren.
+                            <br><br> Momenteel bestaat het project uit een Spaceship, een Pendulum, een Dubbele Pendulum en
+                            een Boid System.
+                            <br><br> <a href="https://github.com/dsbodewes/math-physualizer">Zie hier repository op
+                                GitHub</a>
+                        </p>
+                    </div>
                 </div>
-                <div class="description">
-                    <h2>Math Physualizer</h2>
-                    <br>
-                    <p>Dit project bestaat uit meerdere kleine projecten waarin veel wiskunde voor komt, dit doe ik in Raylib C++. 
-                        <br><br> Hier ben ik aan begonnen omdat ik mijn kennis in wiskunde wilde verbreden, dit helpt mij om wiskunde beter te kunnen visualizeren.
-                        <br><br> Momenteel bestaat het project uit een Spaceship, een Pendulum, een Dubbele Pendulum en een Boid System.
-                        <br><br> <a href="https://github.com/dsbodewes/math-physualizer">Zie hier repository op GitHub</a>
-                    </p>
+
+                <div class="slide">
+                    <div class="image-container">
+                        <img src="images/ss01_peek.png" alt="Project 2">
+                        <img src="images/ss01_peek.png" alt="Project 2">
+                    </div>
+                    <div class="description">
+                        <h2>Project Architectuur: PEEK</h2>
+                        <br>
+                        <p>Tijdens dit project hebben we de opdracht gekregen om aan een game te werken met een thema waar
+                            je je aan moest houden. In ons geval was het thema "Gothiek", dus hadden we besloten om een
+                            horror game te maken.
+                            <br><br> In dit project was ik verantwoordelijk voor de enemy AI in de game, ook heb ik een
+                            aantal modellen in de game gemaakt met Blender.
+                            <br><br> Het project is gemaakt in Unity en C#.
+                            <br><br> <a href="https://github.com/dsbodewes/math-physualizer">Zie hier repository op
+                                GitHub</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="image-container">
+                        <img src="images/tweakin.png" alt="Project 3">
+                    </div>
+                    <div class="description">
+                        <h2>Global Game Jam 2024: Tweakin'</h2>
+                        <br>
+                        <p>Tweakin' is de Global Gamejam Groningen Curveball Award winnaar van 2024.</p>
+                    </div>
+                </div>
+
+                <button class="prev" onclick="changeSlide(-1)">❮</button>
+                <button class="next" onclick="changeSlide(1)">❯</button>
+            </div>
+            
+            
+            <!-- Grid Section -->
+            <div class="project-grid">
+                <div class="grid-item">
+                    <img src="images/traffick_system.gif" alt="Project Thumbnail">
+                    <h3>Project Studio: Traffick System</h3>
+                    <p>Short description of the project.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/arcane_warfield.gif" alt="Project Thumbnail">
+                    <h3>Interfaces: Arcane Warfield</h3>
+                    <p>Short description of the project.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="grid-item">
+                    <img src="images/spendatie_sensatie.gif" alt="Project Thumbnail">
+                    <h3>Serious App: Spendatie Sensatie</h3>
+                    <p>Short description of the project.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="grid-item">
+                    <img src="images/rt2d.png" alt="Project Thumbnail">
+                    <h3>RT2D/Framework</h3>
+                    <p>Short description of the project.</p>
+                    <a href="#">View Project</a>
                 </div>
             </div>
-
-            <div class="slide">
-                <div class="image-container">
-                    <img src="images/ss01_peek.png" alt="Project 2">
-                </div>
-                <div class="description">
-                    <h2>Project Architectuur: PEEK</h2>
-                    <br>
-                    <p>Tijdens dit project hebben we de opdracht gekregen om aan een game te werken met een thema waar je je aan moest houden. In ons geval was het thema "Gothiek", dus hadden we besloten om een horror game te maken.
-                        <br><br> In dit project was ik verantwoordelijk voor de enemy AI in de game, ook heb ik een aantal modellen in de game gemaakt met Blender.
-                        <br><br> Het project is gemaakt in Unity en C#.
-                        <br><br> <a href="https://github.com/dsbodewes/math-physualizer">Zie hier repository op GitHub</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="slide">
-                <div class="image-container">
-                    <img src="images/placeholder01.png" alt="Project 3">
-                </div>
-                <div class="description">
-                    <h2>Clue Quest</h2>
-                    <br>
-                    <p>Nog geen info.</p>
-                </div>
-            </div>
-
-            <button class="prev" onclick="changeSlide(-1)">❮</button>
-            <button class="next" onclick="changeSlide(1)">❯</button>
         </div>
     </section>
 
@@ -98,8 +137,7 @@
     </section>
 
     <footer>
-        <!-- <button onclick="toggleTheme()">Toggle theme</button> -->
-         <p>&#169; Copyright 2024 Di&#235;go Bodewes</p>
+        <p>&#169; Copyright 2024 Di&#235;go Bodewes</p>
     </footer>
 
     <script src="script.js" async defer></script>
