@@ -58,4 +58,3 @@ function changeSlide(step) {
 // Initialize the slider
 showSlide(currentSlide);
 
-// More Images in Slider
