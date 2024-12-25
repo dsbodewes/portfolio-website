@@ -122,7 +122,6 @@ header.shrunk {
     margin-top: 3.125rem;
     left: 6.25rem;
     background-color: rgba(0, 0, 0, 0.5);
-    /* 50% transparent black */
 }
 
 .info h1 {
@@ -152,7 +151,6 @@ header.shrunk {
     box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
 }
 
-
 .slide {
     display: none;
     flex-direction: row;
@@ -175,7 +173,7 @@ header.shrunk {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0.5rem 0 0 0.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
 }
 
 .description {
